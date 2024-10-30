@@ -1,20 +1,19 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { CounterPage } from "./components/CounterPage"
+import { TabViewHolder } from "./components/TabViewHolder"
+import { createDrawerNavigator } from '@react-navigation/drawer';
+import { NavigationContainer } from '@react-navigation/native';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+const Drawer = createDrawerNavigator();
+
+const App = () => {
+    return (
+        <NavigationContainer>
+            <Drawer.Navigator initialRouteName="CounterPage">
+                <Drawer.Screen name="Counter Page" component={CounterPage} />
+                <Drawer.Screen name="Tab Activity" component={TabViewHolder} />
+            </Drawer.Navigator>
+        </NavigationContainer>
+    )
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;

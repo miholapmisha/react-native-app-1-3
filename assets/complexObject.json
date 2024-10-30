@@ -1,0 +1,90 @@
+{
+    "user": {
+        "id": 101,
+        "name": "Alice Johnson",
+        "email": "alice.johnson@example.com",
+        "user_image": "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg",
+        "contact": {
+            "phone": "123-456-7890",
+            "address": {
+                "street": "123_main_st",
+                "city": "new_york",
+                "state": "ny",
+                "zip_code": "10001"
+            }
+        },
+        "preferences": {
+            "language": "english",
+            "notifications": {
+                "email": true,
+                "sms": false,
+                "push": true
+            },
+            "theme": "dark"
+        },
+        "friends": [
+            {
+                "id": 102,
+                "name": "John Smith",
+                "contact": {
+                    "email": "john.smith@example.com",
+                    "phone": "234-567-8901"
+                },
+                "social_profiles": [
+                    { "platform": "facebook", "username": "johnsmith123" },
+                    { "platform": "twitter", "username": "jsmith" }
+                ]
+            },
+            {
+                "id": 103,
+                "name": "Sara Lee",
+                "contact": {
+                    "email": "sara.lee@example.com",
+                    "phone": "345-678-9012"
+                },
+                "social_profiles": [
+                    { "platform": "instagram", "username": "sarhttps://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpgalee" },
+                    { "platform": "linkedin", "username": "sara-lee" }
+                ]
+            }
+        ],
+        "orders": [
+            {
+                "total_amount": 149.99
+            },
+            {
+                "order_id": 2002,
+                "date": "2024-10-15",
+                "total_amount": 79.99,
+                "items": [
+                    {
+                        "product_id": "P1003",
+                        "product_name": "Bluetooth Speaker",
+                        "quantity": 1,
+                        "price": 79.99
+                    }
+                ],
+                "shipping_address": {
+                    "street": "789_oak_st",
+                    "city": "los_angeles",
+                    "state": "ca",
+                    "zip_code": "90001"
+                }
+            }
+        ],
+        "activity_log": [
+            {
+                "date": "2024-10-12",
+                "activity": "Logged in from New York, NY"
+            },
+            {
+                "date": "2024-10-13",
+                "activity": "Changed password"
+            },
+            {
+                "date": "2024-10-14",
+                "activity": "Placed an order (#2001)"
+            }
+        ]
+    }
+}
