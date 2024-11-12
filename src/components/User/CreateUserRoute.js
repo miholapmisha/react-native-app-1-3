@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, Button, StyleSheet, Alert } from 'react-native';
-import { addUser } from '../../db/db';
+import { addUser } from '../../db/user';
 import { useNavigation } from '@react-navigation/native';
 
 export const CreateUserRoute = () => {

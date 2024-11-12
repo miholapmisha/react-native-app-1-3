@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Alert, Button, StyleSheet, Text, TextInput, View} from 'react-native';
-import {updateUser} from '../../db/db';
+import {updateUser} from '../../db/user';
 import {useNavigation} from '@react-navigation/native';
 
 export const EditUserRoute = ({route}) => {
